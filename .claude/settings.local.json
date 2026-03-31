@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -File - <<'PS1'\nGet-CimInstance Win32_Process | Where-Object { $_.CommandLine -like '*uvicorn*' } | Select-Object ProcessId, CommandLine | Format-List\nPS1)",
+      "Bash(powershell -File - <<'PS1'\nGet-CimInstance Win32_Process | Where-Object { $_.Name -eq 'python.exe' } | Select-Object ProcessId, CommandLine | Format-List\nPS1)",
+      "Bash(curl -s http://localhost:8000/health)"
+    ]
+  }
+}

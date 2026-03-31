@@ -1,0 +1,149 @@
+{
+  "categories": [
+    {
+      "name": "Civil Work",
+      "description": "Masonry, plastering, waterproofing, demolition",
+      "sort_order": 1,
+      "items": [
+        {"item_name": "Brick work (9\" wall)", "unit": "sqft", "rate": 85.00, "description": "Red brick wall construction including cement mortar"},
+        {"item_name": "Brick work (4.5\" wall)", "unit": "sqft", "rate": 55.00, "description": "Half brick partition wall"},
+        {"item_name": "Plastering", "unit": "sqft", "rate": 35.00, "description": "Cement plaster 12mm thick"},
+        {"item_name": "Waterproofing", "unit": "sqft", "rate": 45.00, "description": "Chemical waterproofing treatment"},
+        {"item_name": "Demolition", "unit": "sqft", "rate": 25.00, "description": "Breaking and removal of existing structure"},
+        {"item_name": "Tile fixing labour", "unit": "sqft", "rate": 30.00, "description": "Labour for tile installation"}
+      ]
+    },
+    {
+      "name": "False Ceiling",
+      "description": "Gypsum, POP, wooden ceiling work",
+      "sort_order": 2,
+      "items": [
+        {"item_name": "Gypsum board plain", "unit": "sqft", "rate": 95.00, "description": "Saint-Gobain/Gyproc plain gypsum false ceiling"},
+        {"item_name": "Gypsum board with cove", "unit": "sqft", "rate": 130.00, "description": "Gypsum ceiling with peripheral cove lighting"},
+        {"item_name": "POP false ceiling", "unit": "sqft", "rate": 85.00, "description": "Plaster of Paris false ceiling"},
+        {"item_name": "Wooden false ceiling", "unit": "sqft", "rate": 180.00, "description": "Wooden panel/batten ceiling"},
+        {"item_name": "Designer ceiling (multi-level)", "unit": "sqft", "rate": 165.00, "description": "Multi-level gypsum with LED profiles"}
+      ]
+    },
+    {
+      "name": "Flooring",
+      "description": "Tiles, marble, wooden, vinyl flooring",
+      "sort_order": 3,
+      "items": [
+        {"item_name": "Vitrified tiles (2x2)", "unit": "sqft", "rate": 55.00, "description": "Standard vitrified tile supply + fixing"},
+        {"item_name": "Vitrified tiles (4x2)", "unit": "sqft", "rate": 75.00, "description": "Large format vitrified tiles"},
+        {"item_name": "Italian marble", "unit": "sqft", "rate": 250.00, "description": "Imported Italian marble flooring"},
+        {"item_name": "Indian marble (Makrana)", "unit": "sqft", "rate": 150.00, "description": "Makrana white marble flooring"},
+        {"item_name": "Wooden laminate", "unit": "sqft", "rate": 120.00, "description": "8mm laminate wooden flooring"},
+        {"item_name": "Engineered wood", "unit": "sqft", "rate": 200.00, "description": "Engineered hardwood flooring"},
+        {"item_name": "Vinyl flooring", "unit": "sqft", "rate": 65.00, "description": "LVT/SPC vinyl plank flooring"},
+        {"item_name": "Bathroom wall tiles", "unit": "sqft", "rate": 60.00, "description": "Ceramic wall tiles for bathroom"},
+        {"item_name": "Kitchen backsplash tiles", "unit": "sqft", "rate": 85.00, "description": "Designer tiles for kitchen backsplash"}
+      ]
+    },
+    {
+      "name": "Painting",
+      "description": "Interior and exterior painting work",
+      "sort_order": 4,
+      "items": [
+        {"item_name": "Putty + primer + emulsion (basic)", "unit": "sqft", "rate": 22.00, "description": "2 coats putty + 1 primer + 2 coats basic emulsion"},
+        {"item_name": "Asian Paints Royale emulsion", "unit": "sqft", "rate": 28.00, "description": "Premium interior emulsion paint"},
+        {"item_name": "Texture paint", "unit": "sqft", "rate": 65.00, "description": "Designer texture paint finish"},
+        {"item_name": "Wallpaper", "unit": "sqft", "rate": 45.00, "description": "Premium wallpaper supply + installation"},
+        {"item_name": "Wood polish/laminate", "unit": "sqft", "rate": 55.00, "description": "Melamine/PU polish for woodwork"},
+        {"item_name": "Enamel paint (woodwork)", "unit": "sqft", "rate": 35.00, "description": "Enamel paint for doors and windows"}
+      ]
+    },
+    {
+      "name": "Electrical",
+      "description": "Wiring, switches, fixtures, panels",
+      "sort_order": 5,
+      "items": [
+        {"item_name": "Electrical point (light/fan)", "unit": "point", "rate": 350.00, "description": "Wiring point with conduit for light or fan"},
+        {"item_name": "Electrical point (power/AC)", "unit": "point", "rate": 550.00, "description": "Heavy duty power point for AC/geyser"},
+        {"item_name": "MCB distribution panel", "unit": "nos", "rate": 8500.00, "description": "Schneider/Havells MCB panel 8-way"},
+        {"item_name": "LED downlight", "unit": "nos", "rate": 450.00, "description": "6W LED recessed downlight"},
+        {"item_name": "LED strip light (per rft)", "unit": "rft", "rate": 120.00, "description": "LED strip for cove lighting"},
+        {"item_name": "Chandelier installation", "unit": "nos", "rate": 1500.00, "description": "Installation of chandelier (fixture cost extra)"},
+        {"item_name": "Modular switches (Schneider)", "unit": "nos", "rate": 350.00, "description": "Schneider Zencelo/Livia switch plate"}
+      ]
+    },
+    {
+      "name": "Carpentry",
+      "description": "Wardrobes, TV units, storage, panelling",
+      "sort_order": 6,
+      "items": [
+        {"item_name": "Wardrobe (sliding)", "unit": "sqft", "rate": 1200.00, "description": "BWP plywood wardrobe with laminate finish, sliding doors"},
+        {"item_name": "Wardrobe (hinged)", "unit": "sqft", "rate": 1050.00, "description": "BWP plywood wardrobe with laminate finish, hinged doors"},
+        {"item_name": "TV unit", "unit": "sqft", "rate": 950.00, "description": "Wall-mounted TV unit with laminate/veneer finish"},
+        {"item_name": "Study table", "unit": "sqft", "rate": 900.00, "description": "Study/work desk with drawers"},
+        {"item_name": "Kitchen cabinets (base)", "unit": "sqft", "rate": 1400.00, "description": "BWP plywood base cabinets with granite top"},
+        {"item_name": "Kitchen cabinets (wall)", "unit": "sqft", "rate": 1100.00, "description": "Wall-hung kitchen cabinets"},
+        {"item_name": "Crockery unit", "unit": "sqft", "rate": 1100.00, "description": "Display cum storage crockery unit"},
+        {"item_name": "Shoe rack", "unit": "sqft", "rate": 850.00, "description": "Entrance shoe storage unit"},
+        {"item_name": "Mandir unit", "unit": "nos", "rate": 25000.00, "description": "Custom pooja mandir with CNC/jali work"},
+        {"item_name": "Wall panelling (WPC/PVC)", "unit": "sqft", "rate": 180.00, "description": "WPC/PVC decorative wall panel"},
+        {"item_name": "Wall panelling (veneer)", "unit": "sqft", "rate": 350.00, "description": "Natural veneer wall panelling"},
+        {"item_name": "Bed headboard panel", "unit": "sqft", "rate": 280.00, "description": "Upholstered/veneer bed headboard"}
+      ]
+    },
+    {
+      "name": "Modular Kitchen",
+      "description": "Complete modular kitchen packages",
+      "sort_order": 7,
+      "items": [
+        {"item_name": "L-shape kitchen (basic)", "unit": "lumpsum", "rate": 150000.00, "description": "?"},
+        {"item_name": "L-shape kitchen (premium)", "unit": "lumpsum", "rate": 250000.00, "description": "Hafele/Hettich hardware, acrylic/PU finish, Franke sink"},
+        {"item_name": "U-shape kitchen (basic)", "unit": "lumpsum", "rate": 200000.00, "description": "MDF/HDHMR, soft-close, steel basket accessories"},
+        {"item_name": "U-shape kitchen (premium)", "unit": "lumpsum", "rate": 350000.00, "description": "Premium hardware, imported finish, chimney included"},
+        {"item_name": "Parallel kitchen (basic)", "unit": "lumpsum", "rate": 180000.00, "description": "Two parallel counter kitchen, laminate finish"},
+        {"item_name": "Island kitchen", "unit": "lumpsum", "rate": 400000.00, "description": "Kitchen with island counter, premium fittings"},
+        {"item_name": "Kitchen chimney", "unit": "nos", "rate": 15000.00, "description": "Auto-clean chimney (Elica/Faber)"},
+        {"item_name": "Granite countertop", "unit": "sqft", "rate": 250.00, "description": "Black/brown granite kitchen countertop"},
+        {"item_name": "Quartz countertop", "unit": "sqft", "rate": 450.00, "description": "Engineered quartz kitchen countertop"}
+      ]
+    },
+    {
+      "name": "Furniture",
+      "description": "Loose furniture and soft furnishings",
+      "sort_order": 8,
+      "items": [
+        {"item_name": "King size bed (with storage)", "unit": "nos", "rate": 55000.00, "description": "6x6.5 ft bed with hydraulic storage"},
+        {"item_name": "Queen size bed (with storage)", "unit": "nos", "rate": 42000.00, "description": "5x6.5 ft bed with hydraulic storage"},
+        {"item_name": "Sofa set (3+1+1)", "unit": "nos", "rate": 45000.00, "description": "Fabric sofa set with foam cushions"},
+        {"item_name": "Dining table (6 seater)", "unit": "nos", "rate": 35000.00, "description": "Wooden dining table with 6 chairs"},
+        {"item_name": "Dining table (4 seater)", "unit": "nos", "rate": 25000.00, "description": "Wooden dining table with 4 chairs"},
+        {"item_name": "Centre table", "unit": "nos", "rate": 12000.00, "description": "Living room centre/coffee table"},
+        {"item_name": "Dressing table", "unit": "nos", "rate": 18000.00, "description": "Dressing table with mirror and storage"},
+        {"item_name": "Side table", "unit": "nos", "rate": 5000.00, "description": "Bedside/sofa side table"},
+        {"item_name": "Window curtains (per window)", "unit": "nos", "rate": 3500.00, "description": "Curtain fabric + stitching + rod + installation"},
+        {"item_name": "Blinds (per window)", "unit": "nos", "rate": 2500.00, "description": "Roller/zebra blinds per window"}
+      ]
+    },
+    {
+      "name": "Plumbing",
+      "description": "Sanitary fittings, CP fittings, plumbing work",
+      "sort_order": 9,
+      "items": [
+        {"item_name": "CP fittings set (basic)", "unit": "set", "rate": 15000.00, "description": "Jaquar/Hindware basic bathroom CP set"},
+        {"item_name": "CP fittings set (premium)", "unit": "set", "rate": 35000.00, "description": "Kohler/Grohe premium bathroom CP set"},
+        {"item_name": "Sanitary fixtures (basic)", "unit": "set", "rate": 25000.00, "description": "EWC, basin, accessories — basic brand"},
+        {"item_name": "Sanitary fixtures (premium)", "unit": "set", "rate": 55000.00, "description": "EWC, basin, accessories — premium brand"},
+        {"item_name": "Plumbing point", "unit": "point", "rate": 650.00, "description": "New plumbing point with concealed piping"},
+        {"item_name": "Geyser installation", "unit": "nos", "rate": 2000.00, "description": "Geyser installation (geyser cost extra)"},
+        {"item_name": "Water purifier point", "unit": "nos", "rate": 1500.00, "description": "RO water purifier plumbing point"}
+      ]
+    },
+    {
+      "name": "HVAC",
+      "description": "Air conditioning and ventilation",
+      "sort_order": 10,
+      "items": [
+        {"item_name": "Split AC installation", "unit": "nos", "rate": 5000.00, "description": "AC installation with copper piping (AC unit cost extra)"},
+        {"item_name": "AC copper piping (extra)", "unit": "rft", "rate": 120.00, "description": "Additional copper piping beyond standard 10ft"},
+        {"item_name": "AC drain pipe", "unit": "rft", "rate": 45.00, "description": "PVC drain pipe for AC condensate"},
+        {"item_name": "Exhaust fan", "unit": "nos", "rate": 1200.00, "description": "Exhaust fan supply + installation"}
+      ]
+    }
+  ]
+}
