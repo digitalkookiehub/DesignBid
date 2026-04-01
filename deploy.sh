@@ -69,8 +69,8 @@ SMTP_PASSWORD=
 FROM_EMAIL=noreply@designbid.com
 UPLOAD_DIR=./uploads
 MAX_FILE_SIZE=10485760
-APP_URL=http://187.127.142.119
-API_URL=http://187.127.142.119:8000
+APP_URL=http://optionscreener.online
+API_URL=http://optionscreener.online
 ENVFILE
 
 mkdir -p uploads
@@ -87,7 +87,7 @@ cd /opt/app/DesignBid/frontend
 
 # Create frontend .env
 cat > .env << 'ENVFILE'
-VITE_API_URL=http://187.127.142.119:8000
+VITE_API_URL=http://optionscreener.online
 ENVFILE
 
 npm install --silent
@@ -119,7 +119,7 @@ SVCFILE
 cat > /etc/nginx/sites-available/designbid << 'NGINXCONF'
 server {
     listen 80;
-    server_name 187.127.142.119;
+    server_name optionscreener.online www.optionscreener.online 187.127.142.119;
 
     # Frontend
     root /opt/app/DesignBid/frontend/dist;
@@ -178,9 +178,9 @@ echo "========================================="
 echo "  DEPLOYMENT COMPLETE!"
 echo "========================================="
 echo ""
-echo "  Frontend: http://187.127.142.119"
-echo "  Backend:  http://187.127.142.119:8000"
-echo "  API Docs: http://187.127.142.119/docs"
+echo "  Frontend: http://optionscreener.online"
+echo "  Backend:  http://optionscreener.online/api"
+echo "  API Docs: http://optionscreener.online/docs"
 echo ""
 echo "  Check status:"
 echo "    systemctl status designbid-backend"
