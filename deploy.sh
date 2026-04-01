@@ -26,13 +26,16 @@ echo "[3/8] Installing system dependencies..."
 apt-get update -qq
 apt-get install -y -qq git python3 python3-pip python3-venv nginx postgresql postgresql-contrib curl ca-certificates gnupg > /dev/null 2>&1
 
-# Install Node.js 22 via NodeSource
+# Remove old Node.js and install Node.js 22 via NodeSource
 echo "Installing Node.js 22..."
+apt-get remove -y nodejs npm 2>/dev/null || true
+rm -f /etc/apt/sources.list.d/nodesource*.list
 mkdir -p /etc/apt/keyrings
 curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg --yes
 echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_22.x nodistro main" > /etc/apt/sources.list.d/nodesource.list
 apt-get update -qq
-apt-get install -y -qq nodejs > /dev/null 2>&1
+apt-get install -y nodejs
+node --version
 
 # Ensure PostgreSQL is running
 systemctl enable postgresql
