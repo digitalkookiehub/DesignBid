@@ -3,43 +3,49 @@ version: '3.8'
 services:
   db:
     image: postgres:15-alpine
+    restart: always
     environment:
       POSTGRES_USER: ${DB_USER:-designbid}
-      POSTGRES_PASSWORD: ${DB_PASSWORD:-password}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-designbid_prod_2024}
       POSTGRES_DB: ${DB_NAME:-designbid}
     volumes:
       - postgres_data:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U designbid"]
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-designbid}"]
       interval: 5s
       timeout: 5s
       retries: 5
 
   backend:
     build: ./backend
+    restart: always
     environment:
-      DATABASE_URL: postgresql://${DB_USER:-designbid}:${DB_PASSWORD:-password}@db:5432/${DB_NAME:-designbid}
-      SECRET_KEY: ${SECRET_KEY:-change-this-to-a-secure-random-string}
+      DATABASE_URL: postgresql://${DB_USER:-designbid}:${DB_PASSWORD:-designbid_prod_2024}@db:5432/${DB_NAME:-designbid}
+      SECRET_KEY: ${SECRET_KEY:-dB-pr0d-s3cr3t-k3y-ch4ng3-th1s-2024-x7k9m2}
+      ALGORITHM: HS256
+      ACCESS_TOKEN_EXPIRE_MINUTES: 30
+      REFRESH_TOKEN_EXPIRE_DAYS: 7
       SMTP_HOST: ${SMTP_HOST:-}
       SMTP_PORT: ${SMTP_PORT:-587}
       SMTP_USER: ${SMTP_USER:-}
       SMTP_PASSWORD: ${SMTP_PASSWORD:-}
       FROM_EMAIL: ${FROM_EMAIL:-noreply@designbid.com}
       UPLOAD_DIR: /app/uploads
-      APP_URL: ${APP_URL:-http://localhost:80}
-      API_URL: ${API_URL:-http://localhost:8000}
+      MAX_FILE_SIZE: 10485760
+      APP_URL: http://optionscreener.online
+      API_URL: http://optionscreener.online
     depends_on:
       db:
         condition: service_healthy
-    ports:
-      - "8000:8000"
     volumes:
       - uploads:/app/uploads
 
   frontend:
-    build: ./frontend
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: http://optionscreener.online
+    restart: always
     ports:
       - "80:80"
     depends_on:
