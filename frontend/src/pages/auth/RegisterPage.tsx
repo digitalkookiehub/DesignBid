@@ -30,8 +30,10 @@ export default function RegisterPage() {
     try {
       await register({ email, password, full_name: fullName, company_name: companyName || undefined, role });
       navigate('/login');
-    } catch {
-      setError('Registration failed. Email may already be in use.');
+    } catch (err: unknown) {
+      const axiosErr = err as { response?: { data?: { detail?: string } } };
+      const detail = axiosErr?.response?.data?.detail;
+      setError(detail || 'Registration failed. Please try again.');
     } finally {
       setLoading(false);
     }
